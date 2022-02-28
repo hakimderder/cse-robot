@@ -1,0 +1,18 @@
+
+Cable USB a 3 branches (rouge  vert - bleu)
+
+Rouge : Tx (Rx sur rasp pin 10)
+Vert : Rx (Tx sur rasp pin 8)
+Bleu : ground (pin 6)
+
+
+manette : nouveau terminal
+ssh ubuntu@agribot
+ds4drv
+Boutons share+Ps
+Boutons R2 L2
+
+nouveau terminal
+oslaunch agribot agribot_manual_mapping.launch
+
+
