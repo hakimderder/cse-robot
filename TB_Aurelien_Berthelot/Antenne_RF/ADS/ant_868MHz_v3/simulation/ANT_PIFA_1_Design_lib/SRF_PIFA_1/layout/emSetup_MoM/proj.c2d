@@ -1,0 +1,32 @@
+CITIFILE A.01.01
+#Momentum: B.12.62.134 (*) built: Mar 29 2018 
+#Momentum Date and Time: Sat Jun  6 23:06:58 2020
+
+NAME PortSet1
+
+
+CONSTANT NBR_OF_PORTS 1
+
+VAR freq MAG 2
+
+DATA GAMMA_1[1] RI
+DATA Z0_1[1,1] RI
+DATA LAMBADAI_1[1,1] RI
+
+VAR_LIST_BEGIN
+	 7673259.342
+	 2000000000
+VAR_LIST_END
+
+BEGIN
+	 0 ,	 0 
+	 0 ,	 0 
+END
+BEGIN
+	 50 ,	 0 
+	 50 ,	 0 
+END
+BEGIN
+	 0 ,	 0 
+	 0 ,	 0 
+END

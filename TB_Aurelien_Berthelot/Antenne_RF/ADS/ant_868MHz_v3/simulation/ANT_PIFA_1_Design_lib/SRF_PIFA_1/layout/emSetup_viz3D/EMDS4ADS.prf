@@ -1,0 +1,51 @@
+Begin_Block  Header 
+  
+  Mode  ASCII 
+  File_Name  C:/Users/aurelien_berthelot/Desktop/fichiers_TB/TB/TB/electronique/Module_RTK/antenne_rf/Labo_07_wrk_For_Students/ant_868MHz_v1/simulation/ANT_PIFA_1_Design_lib/SRF_PIFA_1/layout/emSetup_viz3D/EMDS4ADS.prf 
+  Version  3.00 
+  
+End_Block  Header 
+
+Begin_Block  Data 
+  
+  Begin_Preferences 
+  
+  Begin_Material_Block 
+  Material cond2     1.0000000000000000e+00      1.0000000000000000e+00      0.0000000000000000e+00  
+  Material __SubstrateLayer1     1.0000000000000000e+00      0.0000000000000000e+00      1.0000000000000000e+00  
+  Material cond     9.3333333333333335e-01      4.1568627450980394e-01      3.1372549019607843e-01  
+  End_Material_Block 
+  
+  Begin_Color_Block 
+  Object __SubstrateLayer1_1     1.0000000000000000e+00      0.0000000000000000e+00      1.0000000000000000e+00  
+  Object cond_2     9.3333333333333335e-01      4.1568627450980394e-01      3.1372549019607843e-01  
+  Object cond2_3     1.0000000000000000e+00      1.0000000000000000e+00      0.0000000000000000e+00  
+  End_Color_Block 
+  
+  Begin_Visible_Block 
+  Object __SubstrateLayer1_1 1  0  80  
+  Object cond_2 1  1  50  
+  Object cond2_3 1  1  50  
+  End_Visible_Block 
+  
+  Begin_Plane_Block 
+  Planes 0  
+  End_Plane_Block 
+  
+  Begin_Camera_Block 
+  Position     1.8540161132812500e+02      2.0181588745117188e+02      2.0392175292968750e+02  
+  Target     8.9350471496582031e+01      2.9255977630615234e+01      2.0437693595886230e+00  
+  Up    -4.9317315220832825e-01      7.6311910152435303e-01     -4.1764786839485168e-01  
+      7.9878639221191406e+01      7.9878639221191406e+01  
+  End_Camera_Block 
+  
+  Begin_Background_Block 
+  Top_Color     0.0000000000000000e+00      0.0000000000000000e+00      0.0000000000000000e+00  
+  Bottom_Color     0.0000000000000000e+00      0.0000000000000000e+00      0.0000000000000000e+00  
+  Shadow 0  
+  End_Background_Block 
+  
+  End_Preferences 
+  
+End_Block  Data 
+

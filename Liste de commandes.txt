@@ -1,0 +1,26 @@
+Avec Git bash, connecter en ssh
+
+
+---------- Connecter manette ----------
+Terminal 1 :
+ssh ubuntu@agribot
+mdp redsreds
+
+Ouvrir Terminal 2 :
+ssh ubuntu@agribot
+mdp redsreds
+ds4drv
+Press share+PS
+
+Sur terminal 2 :
+roslaunch agribot agribot_manual_mapping.launch
+Press L2+R2
+
+Manettes connectées et programme lancé (controle manuel avec manmette)
+-------------------
+
+
+>> dmesg
+permet de voir si le robot est sous-alimenté
+
+

@@ -1,0 +1,4 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+INCLUDE $HPEESOF_DIR/oalibs/dsp.defs
+DEFINE ANT_PIFA_1_Design_lib ANT_PIFA_1_Design_lib
+ASSIGN ANT_PIFA_1_Design_lib libMode shared
