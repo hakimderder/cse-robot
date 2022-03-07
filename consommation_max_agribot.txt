@@ -1,0 +1,8 @@
+Raspberry Pi 4 : 3A
+Moduleradio : 1A
+Camera : 0.5A
+Carte sensors FPGA : 0.1A
+MTi-680G : 0.5A
+Ecran : Consommation élevée, non précisé
+
+Consommation totale : 5.1A
