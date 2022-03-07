@@ -24,3 +24,5 @@ Manettes connectées et programme lancé (controle manuel avec manmette)
 permet de voir si le robot est sous-alimenté
 
 
+>> sshfs ubuntu@agribot:/home home/reds
+
