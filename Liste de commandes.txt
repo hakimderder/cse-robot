@@ -26,3 +26,6 @@ permet de voir si le robot est sous-alimenté
 
 >> sshfs ubuntu@agribot:/home home/reds
 
+
+Rechercher dans une ligne de commande : <commande> | grep <mot>
+
