@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+    <include file="$(find agribot)/ros_pkg/hardware/joy/launch/joy.launch"></include>
+    <include file="$(find agribot)/ros_pkg/hardware/ps4_ros/launch/ps4_ros.launch"></include>
+    <include file="$(find agribot)/ros_pkg/navigation/gps_navigation/launch/start_gps_nav.launch"></include>  
+
+</launch>

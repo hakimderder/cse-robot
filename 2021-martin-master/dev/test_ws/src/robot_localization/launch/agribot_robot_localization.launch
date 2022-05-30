@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Data illustrated in a live class => ROS Developers Live-Class #52: Localize a robot using GPS -->
+<launch>
+
+    <!-- Start ekf for fusing imu and odom -->
+    <node name="ekf_localization" pkg="robot_localization" type="ekf_localization_node">
+        <rosparam command="load" file="$(find agribot)/ros_pkg/navigation/robot_localization/params/ekf_localization.yaml" />
+    </node>
+
+</launch>

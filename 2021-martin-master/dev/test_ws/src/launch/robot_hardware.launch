@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <arg name="model" default="$(find mobile_base)/mobile_base_1/description/urdf/agribot_description.urdf"/>
+  <param name="robot_description" command="$(find xacro)/xacro $(arg model)" />
+
+  <!-- Ros diff drive controller -->
+  <rosparam command="load" file="$(find mobile_base)/mobile_base_1/params/diff_drive.yaml" />
+  <!--rosparam command="load" file="$(find agribot_control)/params/diff_drive.yaml" /-->
+
+  <node name="diff_drive_controller" pkg="controller_manager" type="spawner" args="mobile_base_controller joint_state_controller" respawn="false" output="screen"/>
+  
+  <!--node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/-->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+  <!-- My hardware interface code -->
+  <node pkg="agribot_control" name="agribot_control" type="agribot_hw_control_node" output="screen"/>
+
+  <node pkg="reds_sensor_board" name="reds_sensor_board" type="reds_sensor_board_node" output="screen"/>
+
+  <node pkg="i2cpwm_board" name="i2cpwm_board_node" type="i2cpwm_board" output="screen"/>
+
+  <node  name="xsens_mti_node" pkg="xsens_mti_driver" type="xsens_mti_node" output="screen">
+    <!--<param name="port" value="/dev/ttyUSB0" />-->
+    <param name="device" value="26390301" />
+    <param name="publisher_queue_size" value="2" />
+    <param name="pub_imu" value="true" />
+    <param name="pub_quaternion" value="false" />
+    <param name="pub_mag" value="false" />
+    <param name="pub_angular_velocity" value="true" />
+    <param name="pub_acceleration" value="true" />
+    <param name="pub_free_acceleration" value="false" />
+    <param name="pub_dq" value="false" />
+    <param name="pub_dv" value="false" />
+    <param name="pub_sampletime" value="true" />
+    <param name="pub_temperature" value="false" />
+    <param name="pub_pressure" value="false" />
+    <param name="pub_gnss" value="true" />
+    <param name="pub_twist" value="true" />
+    <param name="pub_transform" value="false" />
+    <param name="pub_positionLLA" value="false" />
+    <param name="pub_velocity" value="true" />
+  </node>
+
+  <!-- Fusion of imu and odom -->
+  <include file="$(find agribot)/ros_pkg/navigation/robot_localization/launch/agribot_robot_localization.launch"></include>
+
+  <!-- Adding GPS nav -->
+  <include file="$(find agribot)/ros_pkg/navigation/gps_navigation/launch/gps_nav.launch"></include>
+
+</launch>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

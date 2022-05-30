@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Data illustrated in a live class => ROS Developers Live-Class #52: Localize a robot using GPS -->
+<launch>
+
+    <!-- Start ekf for map to odom -->
+    <node name="ekf_se_map" pkg="robot_localization" type="ekf_localization_node" clear_params="true" >
+        <rosparam command="load" file="$(find agribot)/ros_pkg/navigation/robot_localization/params/gps_localization.yaml" />
+        <remap from="/odometry/filtered" to="/odometry/gps" />
+    </node>
+
+</launch>

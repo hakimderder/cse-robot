@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+    <include file="$(find agribot)/ros_pkg/hardware/joy/launch/joy.launch"></include>
+    <include file="$(find agribot)/ros_pkg/hardware/ps4_ros/launch/ps4_ros.launch"></include>
+    <include file="/home/ubuntu/robot_reds/dev/software/robot_ws/src/robot/mobile_base/mobile_base_1/launch/robot_hardware.launch"></include>  
+
+</launch>

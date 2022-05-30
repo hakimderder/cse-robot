@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Data illustrated in a live class => ROS Developers Live-Class #52: Localize a robot using GPS -->
+<launch>
+    <!-- Launch the map-->
+    <include file="$(find agribot)/ros_pkg/navigation/gps_navigation/launch/start_map_server.launch"></include>
+
+    <!-- Launch imu to odom -->
+    <include file="$(find agribot)/ros_pkg/navigation/robot_localization/launch/imu_odom_localization.launch"></include>
+
+    <!-- Launch map to odom -->
+    <include file="$(find agribot)/ros_pkg/navigation/robot_localization/launch/gps_localization.launch"></include>
+
+    <!-- Launch gnss to utm -->
+    <include file="$(find agribot)/ros_pkg/navigation/gps_navigation/launch/start_navsat.launch"></include>
+
+</launch>

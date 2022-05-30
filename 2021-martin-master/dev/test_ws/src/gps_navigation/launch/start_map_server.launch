@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Data illustrated in a live class => ROS Developers Live-Class #52: Localize a robot using GPS -->
+<launch>
+    <!-- Start map server -->
+    <arg name="map_file" default="$(find agribot)/ros_pkg/navigation/gps_navigation/maps/map_test.yaml" />
+    <node name="map_srv" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+</launch>

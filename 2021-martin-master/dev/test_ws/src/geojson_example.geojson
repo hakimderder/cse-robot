@@ -1,0 +1,26 @@
+{ "type": "FeatureCollection",
+    "features": [
+      { "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [46.7802294, 6.6611095]
+        },
+        "properties": {
+          "name": "pilonne 6170"
+        }
+      },
+      { "type": "Feature",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [46.7153642, 6.5094504], [46.7163901, 6.5101327], 
+            [46.7165448, 6.5088060], [46.7158118, 6.5081559]
+            ]
+        },
+        "properties": {
+          "name": "Champ d'Agiez",
+          "nb_bandes": 12.0
+        }
+      }
+    ]
+}

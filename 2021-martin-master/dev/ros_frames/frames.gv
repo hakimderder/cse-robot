@@ -1,0 +1,16 @@
+digraph G {
+"odom" -> "base_link"[label="Broadcaster: /ekf_localization_with_gps\nAverage rate: 92.080 Hz\nMost recent transform: 1631865548.884 ( 0.061 sec old)\nBuffer length: 4.941 sec\n"];
+"base_link" -> "imu_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1631865548.945 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "left_wheel_bw"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1631865548.945 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "right_wheel_bw"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1631865548.945 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "laser"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1631865548.945 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "base_1"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1631865548.945 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "base_2"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1631865548.945 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "base_3"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1631865548.945 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "left_wheel_fw"[label="Broadcaster: /robot_state_publisher\nAverage rate: 32.520 Hz\nMost recent transform: 1631865548.891 ( 0.054 sec old)\nBuffer length: 4.920 sec\n"];
+"base_link" -> "right_wheel_fw"[label="Broadcaster: /robot_state_publisher\nAverage rate: 32.520 Hz\nMost recent transform: 1631865548.891 ( 0.054 sec old)\nBuffer length: 4.920 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1631865548.945"[ shape=plaintext ] ;
+ }->"odom";
+}
