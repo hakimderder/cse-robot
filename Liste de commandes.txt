@@ -29,3 +29,9 @@ permet de voir si le robot est sous-alimenté
 
 Rechercher dans une ligne de commande : <commande> | grep <mot>
 
+Lancer 
+roslaunch agribot start_gps_nav.launch
+
+
+
+
